@@ -7,6 +7,7 @@
 body {
   color: #67615a;
   background-color: #f5f5f1;
+
   font-family: "Catamaran", sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -43,7 +44,7 @@ section {
   line-height: 1.8;
 }
 
-.team-container {
+#team-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -104,6 +105,7 @@ section {
 label {
   margin-bottom: .25em;
 }
+
 input,
 select,
 button {
