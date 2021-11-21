@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css" />
     <!-- link google font -->
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&family=Vidaloka&display=swap" rel="stylesheet"/>
+    <!-- link font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
 
   <body>
@@ -42,15 +44,39 @@
     <section id="add-member">
       <div class="container">
         <h2 class="section-title">Add a new member</h2>
-        <div class="form-container">
-          <label for="name">Name </label>
-          <input type="text" id="name" />
-          <label for="role">Role </label>
-          <input type="text" id="role" />
-          <label for="name">Image </label>
-          <input type="text" id="image" />
-          <button type="button" id="addMemberButton">Add</button>
-        </div>
+        <form id="form">
+          <div>
+            <label for="name">Username </label>
+
+            <input type="text" id="name" placeholder="Example: Mitchell Fuller"/>
+
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            
+            <div class="error"></div>
+          </div>
+          <div>
+            <label for="role">Role </label>
+
+            <input type="text" id="role" placeholder="Example: New Team Member"/>
+
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+
+            <div class="error"></div>
+          </div>
+          <div>
+            <label for="image">Image </label>
+
+            <input type="text" id="image" placeholder="Example: img/new-team-member-04.jpg"/>
+
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+
+            <div class="error"></div>
+          </div>
+          <button type="submit" id="addMemberButton">Add</button>
+        </form>
       </div>
     </section>
 
